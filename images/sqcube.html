@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="txt" placeholder="enter you number">
+        <input type="button" value="submit" onclick="myfunction()">
+        <h1 id="display1"></h1>
+        <h1 id="display2"></h1>
+    </form>
+    <script>
+        function myfunction(){
+            let text = document.getElementById("txt").value;
+            let suqare_root = text * text;
+            let cube_root = text * text * text;
+            let display1 = document.getElementById("display1");
+            display1.innerHTML=`square root of ${text} is ${suqare_root}`
+
+            let display2 = document.getElementById("display2");
+            display2.innerHTML=`cube root of ${text} is ${cube_root}`
+        }
+    </script>
+</body>
+</html>

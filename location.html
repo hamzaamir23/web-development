@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <link rel="icon" href="/images/Dark Purple And Gold Luxury Beauty Salon Logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 1px solid rgb(0, 162, 255);
+        }
+
+        .button:hover {
+            background-color: rgb(0, 183, 255);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video-overlay" autoplay loop
+        src="https://player.vimeo.com/external/420239207.sd.mp4?s=2b5a6633c37af1a6fb0beb02c06bdc376fdfcce2&profile_id=165&oauth2_token_id=57447761"></video>
+    <div id="text-overlay">
+       <p> Subscribe Us For More Information.</p>
+        <button class="button">subscribe</button>
+    </div>
+
+    <!-- <audio controls autoplay src="/audio.mp3" type="audio/mpeg"></audio>
+    <br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28936.864117305002!2d67.06061969999999!3d24.962439399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1709649606369!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+</body>
+
+</html>

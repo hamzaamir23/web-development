@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <img src="/images/bulb_off.png" alt="off" id="img" width="300px">
+    <br>
+    <input type="button" value="on" onclick="bulb_on()">
+    <input type="button" value="off" onclick="bulb_off()">
+    <script>
+        function bulb_on(){
+            let on = document.getElementById("img");
+            on.src = "/images/bulb_on.png"
+        }
+        function bulb_off(){
+            let off = document.getElementById("img");
+            off.src = "/images/bulb_off.png"
+        }
+    </script>
+</body>
+</html>

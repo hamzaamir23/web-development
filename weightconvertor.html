@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight convertor</title>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>kilogram</td>
+                <td>
+                    <input type="text" id="kg">
+                </td>
+                <td>
+                    <input value="submit" onclick="convertor()" type="button">
+                </td>
+            </tr>
+            <tr>
+                <td>gram</td>
+                <td>
+                    <input type="text" id="gram">
+                </td>
+            </tr>
+            <tr>
+                <td>pound</td>
+                <td>
+                    <input type="text" id="pound">
+                </td>
+            </tr>
+            <tr>
+                <td>miligram</td>
+                <td>
+                    <input type="text" id="miligram">
+                </td>
+            </tr>
+            <tr>
+                <td>ton</td>
+                <td>
+                    <input type="text" id="ton">
+                </td>
+            </tr>
+            <tr>
+                <td>ounce</td>
+                <td>
+                    <input type="text" id="ounce">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <script>
+        function convertor(){
+            let k = document.getElementById("kg").value;
+            
+            let gram = k * 1000;
+            let pounds = k * 2.2045;
+            let miligram = k * 1000000;
+            let ton = k * 0.0011023;
+            let ounce = k * 35.274;
+
+            let gram_var = document.getElementById("gram").value = gram;
+            let pounds_var = document.getElementById("pound").value = pounds;
+            let miligram_var = document.getElementById("miligram").value = miligram;
+            let ton_var = document.getElementById("ton").value = ton;
+            let ounce_var = document.getElementById("ounce").value = ounce;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location 2</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <button onclick="getLocation()">locationAPI</button>
+
+    <script>
+        let a = document.getElementById("demo")
+
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                a.innerHTML="user location not found";
+            }
+        }
+        function showPosition(position){
+            a.innerHTML = "latitude" + position.coords.latitude + "longitude" + position.coords.longitude
+        }
+    </script>
+</body>
+</html>

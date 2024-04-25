@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to cart</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="product">
+                <img src="/images/pexels-leeloo-the-first-8916600.jpg" width=400px height="400px" alt="product 1">
+                <h3>Dress</h3>
+                <p>price $19.99</p>
+                <button>Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="/images/pexels-magda-ehlers-1057313.jpg" width=400px height="400px" alt="product 2">
+                <h3>Dress</h3>
+                <p>price $21.00</p>
+                <button>Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="/images/pexels-stanislav-kondratiev-2977304.jpg" width=400px height="400px" alt="product 2">
+                <h3>Bags</h3>
+                <p>price $10.09</p>
+                <button>Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="/images/pexels-flat-hito-904350.jpg" width=400px height="400px" alt="product 2">
+                <h3>Bags</h3>
+                <p>price $15.90</p>
+                <button>Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="/images/pexels-deybson-mallony-5413296.jpg" width=400px  height="400px"alt="product 2">
+                <h3>Shoes</h3>
+                <p>price $23.70</p>
+                <button>Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="/images/pexels-ox-street-6540980.jpg" width=400px height="400px" alt="product 2">
+                <h3>Shoes</h3>
+                <p>price $25.00</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+    </header>
+    <script>
+        const cart = [];
+        function addToCart(productName, price){
+            const cartItems = document.getElementById("cart-items");
+            const listItem = document.createElement("li");
+
+            listItem.innerHTML=
+            ${productName}-${price}
+            <button class="remove button" onclick>
+        }
+    </script>
+</body>
+
+</html>

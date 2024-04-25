@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <th colspan="2">marksheet</th>
+            </tr>
+            <tr>
+                <td><label>name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label>fathername:</label></td>
+                <td><input type="text" id="fathername"></td>
+            </tr>
+            <tr>
+                <td><label>roll_no:</label></td>
+                <td><input type="text" id="roll_no"></td>
+            </tr>
+            <tr>
+                <td><label>class:</label></td>
+                <td><input type="text" id="class"></td>
+            </tr>
+            <tr>
+                <td><label>english:</label></td>
+                <td><input type="text" id="english"></td>
+            </tr>
+            <tr>
+                <td><label>urdu:</label></td>
+                <td><input type="text" id="urdu"></td>
+            </tr>
+            <tr>
+                <td><label>pst:</label></td>
+                <td><input type="text" id="pst"></td>
+            </tr>
+            <tr>
+                <td><label>maths:</label></td>
+                <td><input type="text" id="maths"></td>
+            </tr>
+            <tr>
+                <td><label>physics:</label></td>
+                <td><input type="text" id="physics"></td>
+            </tr>
+            <tr>
+                <td><label>chemistry:</label></td>
+                <td><input type="text" id="chemistry"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="submit" onclick="check()"></td>
+            </tr>
+        </form>
+    </table>
+    <h1 id="display_name"></h1>
+    <h1 id="display_fname"></h1>
+    <h1 id="display_class"></h1>
+    <h1 id="display_roll_no"></h1>
+    <h1 id="display_marks"></h1>
+    <h1 id="percentage"></h1>
+    <script>
+        function check(){
+            let name = document.getElementById("name").value;
+            let fname = document.getElementById("fathername").value;
+            let standard = document.getElementById("class").value;
+            let roll_no = document.getElementById("roll_no").value;
+
+            let pst = document.getElementById("pst").value;
+            let chemistry = document.getElementById("chemistry").value;
+            let english = document.getElementById("english").value;
+            let urdu = document.getElementById("urdu").value;
+            let maths = document.getElementById("maths").value;
+            let physics = document.getElementById("physics").value;
+
+            let display_name = document.getElementById("display_name");
+            let display_fname = document.getElementById("display_fname");
+            let display_Class = document.getElementById("display_class");
+            let display_roll_no = document.getElementById("display_roll_no");
+            let display_marks = document.getElementById("display_marks");
+            let display_percentage = document.getElementById("percentage");
+
+            let obtained = parseInt (maths)+parseInt(chemistry)+parseInt(pst)+parseInt(english)+parseInt(urdu)+parseInt(physics);
+            let percentage = obtained*100/6;
+
+            display_name.innerHTML=name;
+            display_fname.innerHTML=fname;
+            display_roll_no.innerHTML=roll_no;
+            display_Class.innerHTML=standard;
+        
+            display_marks.innerHTML=obtained;
+            display_percentage.innerHTML=percentage;
+        }
+    </script>
+</body>
+</html>
